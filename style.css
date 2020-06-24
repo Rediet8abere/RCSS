@@ -1,0 +1,58 @@
+body, html {
+    height: 100%;
+    font-size: large; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif;
+    line-height: inherit;
+    color: navy;
+    background-color: oldlace;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display:block;
+  float:left;
+  margin: 10px;
+  padding: 10px;
+}
+
+#headings {
+  color: black;
+  margin: 10px;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 46px;
+  line-height: 40px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 10px;
+}
+
