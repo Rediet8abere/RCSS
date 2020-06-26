@@ -7,7 +7,7 @@
 	
 	<div class="navbar">
 		<ul>
-			<li><h1 class="title">Framework Name</h1></li>
+			<li><h1 class="title">RCSS</h1></li>
 			<li><a href="#colors">Colors</a></li>
 			<li><a href="#navbar">Navbar</a></li>
 			<li><a href="#headings">Headings</a></li>
@@ -76,12 +76,29 @@
 			<p>This button has consequences. You might want to think twice before clicking.</p>
 			<p>Custimize buttons by adding CSS variables inline or with a class.</p>
 			<p>
-<button 
-	style="--weight: bold; --background-color: #f85353;"
->Delete</button>
-	<button 
-	style="--background-color: #6bc253;"
->Go!</button>
+			<button class="warning" class="invert"
+				style="--weight: bold; --background-color: #f85353;"
+			>Delete</button>
+			<button class="info" class="invert"
+				style="--weight: bold; --background-color: #f85353;"
+			>Info</button>
+			<button class="action" class="invert"
+			style="--background-color: #6bc253;"
+			>Go!</button>
+		    <br>
+			<br>
+			<p>Use Case</p>
+			<button>Login</button>
+			<button class="warning">Delete</button>
+			<button class="action">Buy Now!</button>
+			<button class="info">Learn more!</button>
+			<br>
+			<br>
+			<button class="warning invert">Delete</button>
+			<br>
+			<br>
+			<p>Custom Style</p>
+			<button style="--bg-color: rgb(102, 70, 192); --fg-color: #fff">Use Location</button>
 			</p>
 
 			<pre>
@@ -108,24 +125,28 @@
 			<form>
 				<label>
 					<span>Text:</span>
-					<input type="text" placeholder="What is your name?">
 				</label>
+				<input type="text" placeholder="What is your name?">
+				
 
 				<label>
 					<span>Email:</span>
-					<input type="email" placeholder="What is your name?">
 				</label>
+				<input type="email" placeholder="What is your name?">
+				
 
 				<label>
 					<span>Password:</span>
-					<input type="password" placeholder="What is your name?">
 				</label>
+				<input type="password" placeholder="What is your name?">
+				
 
 				<label>
 					<span>Your comments</span>
-					<textarea placeholder="Your comment"></textarea>
 				</label>
-
+				<textarea placeholder="Your comment"></textarea>
+	
+                <input type="submit" value="Submit">
 				<!-- Switch with Click -->
 				<div>
 					<label id="switch-2" class="switch-2">

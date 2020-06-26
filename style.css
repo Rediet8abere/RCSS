@@ -7,18 +7,42 @@ body, html {
     background-color: oldlace;
 }
 
-li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+:root {
+  --color: red;
+  --primary-color: rgba(123, 37, 44, 0.7);
+  --size: 121px;
+  --base-font-size: 16px;
+  --large-font-size: 1.85em;
+  --number-of-columns: 4;
+  --golden-ratio: 1.618;
 }
 
-a {
+h1 {
+  /* Available to all h1 and their descendants */
+  --font-size: 2em;
+}
+
+
+/* .navbar > ul{
+  background-color: cornflowerblue;
+  padding: 0px;
+  margin:0px;
+} */
+
+li {
+  list-style-type: none;
+  /* display: inline; */
+}
+
+/* a {
   display:block;
   float:left;
   margin: 10px;
   padding: 10px;
-}
+  position: relative;
+  left: 140px;
+  bottom:80px;
+} */
 
 #headings {
   color: black;
@@ -55,4 +79,89 @@ h6 {
   font-size: 14px;
   line-height: 10px;
 }
+
+button {
+  --bg-color: #fff;
+  --fg-color: rgb(42, 102, 212);
+
+  padding: 0.5em 0.75em;
+  background-color: var(--bg-color);
+  border: 1px solid;
+  color: var(--fg-color);
+  border-radius: 0.5em;
+  font-size: 1em;
+  transition: 300ms;
+}
+
+button:hover {
+  background-color: var(--fg-color);
+  color: var(--bg-color);
+}
+
+button.warning {
+  --fg-color: rgb(245, 70, 39); /* Red button */
+}
+
+button.info {
+  --fg-color: rgb(16, 199, 206); /* Blue button */
+ }
+
+button.action {
+  --fg-color: rgb(42, 228, 135); /* Green button */
+ }
+
+ button.invert {
+  color: var(--bg-color);
+  background-color: var(--fg-color);
+}
+
+button.invert:hover {
+  background-color:var(--bg-color);
+  color: var(--fg-color);
+}
+
+
+/* Form */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  border: 2px solid navy;
+  border-radius: 4px;
+  resize: none;
+  box-shadow: 1px 3px navy;
+  outline: none !important;
+}
+
+textarea {
+  height: 150px;
+}
+
+input[type=text], input[type=email], input[type=password] {
+  box-shadow: 1px 3px navy;
+  border-style: var(--color);
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, textarea:focus {
+  background-color: rgb(179, 246, 246);
+  color: navy;
+}
+
+input[type=submit], button[type=submit] {
+  align-self: flex-end;
+}
+
+
+
+
+
 
