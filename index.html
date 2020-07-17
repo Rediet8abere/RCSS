@@ -21,9 +21,11 @@
 	</div>
 
   <div class="container">
-
+	  
+    <div class=h-b>
 		<section id="headings">
 			<h1>Headings</h1>
+
 			<h1>H1 Heading</h1>
 			<h2>H2 Heading</h2>
 			<h3>H3 Heading</h3>
@@ -43,38 +45,17 @@
 				</code>
 			</pre>
 		</section>
-		
-		<section id="type">
-			<h1>Paragraph styles</h1>
-			<p>This is the <strong>strong tag</strong> in a paragraph. 
-				This is the <em>em tag in a paragraph</em>, elements such 
-				as &lt;strong&gt; and &lt;em&gt; are inline. Here is an 
-				example of the <abbr>abbreviation tag.</abbr> You'd use
-				abbr for things like <abbr title="Hyper Text Markup Language">HTML</abbr>
-				and <abbr title="Cascading Stylesheets">CSS</abbr>.</p>
-			
-			<pre>
-				<code>
-&lt;p&gt;This is an &lt;strong&gt;average&lt;/strong&gt; paragraph. It includes some &lt;em&gt;inline&lt;/em&gt; elements such as &lt;strong&gt; and &lt;em&gt;.&lt;/p&gt;
-				</code>
-			</pre>
-		</section>
-		
+
 		<section id="forms">
-			<h2>Buttons</h2>
-
-			<p>This is your average button. You might want to click it.</p>
-			
-			<p><button>Submit</button></p>
-
+			<h1>Buttons</h1>
+			<p>Average button.</p>
+			<p><button>Submit</button></p> 
 			<pre>
 				<code>
 &lt;button&gt;Submit&lt;/button&gt;
 				</code>
 			</pre>
-
-			<p>This button has consequences. You might want to think twice before clicking.</p>
-			<p>Custimize buttons by adding CSS variables inline or with a class.</p>
+			<p>Button with consequences.</p>
 			<p>
 			<button class="warning" class="invert"
 				style="--weight: bold; --background-color: #f85353;"
@@ -86,34 +67,81 @@
 			style="--background-color: #6bc253;"
 			>Go!</button>
 		    <br>
-			<br>
 			<p>Use Case</p>
 			<button>Login</button>
 			<button class="warning">Delete</button>
 			<button class="action">Buy Now!</button>
 			<button class="info">Learn more!</button>
 			<br>
-			<br>
 			<button class="warning invert">Delete</button>
-			<br>
 			<br>
 			<p>Custom Style</p>
 			<button style="--bg-color: rgb(102, 70, 192); --fg-color: #fff">Use Location</button>
 			</p>
-
 			<pre>
 				<code>
-&lt;button 
-	style=&quot;--weight: bold; 
-	--background-color: #f85353;&quot;
-&gt;Delete&lt;/button&gt;
+			&lt;button style=&quot;--weight: bold; 
+			--background-color: #f85353;&quot; &gt;Delete&lt;/button&gt;
 
-&lt;button 
-	style=&quot;--background-color: #6bc253;&quot;
-&gt;Go!&lt;/button&gt;
+			&lt;buttonstyle=&quot;--background-color: 
+			#6bc253;&quot;&gt;Go!&lt;/button&gt;
 				</code>
 			</pre>
 		</section>
+
+	</div>
+       <div class="p-c"> 
+		<section id="type">
+			<h1>Paragraph styles</h1>
+			<p>This is the <strong>strong tag</strong> in a paragraph. 
+				This is the <em>em tag in a paragraph</em>, elements such 
+				as &lt;strong&gt; and &lt;em&gt; are inline. Here is an 
+				example of the <abbr>abbreviation tag.</abbr> You'd use
+				abbr for things like <abbr title="Hyper Text Markup Language">HTML</abbr>
+				and <abbr title="Cascading Stylesheets">CSS</abbr>.</p>
+			
+			<pre>
+				<code>
+&lt;p&gt;This is an &lt;strong&gt;average&lt;/strong&gt; 
+paragraph. It includes some &lt;em&gt;inline&lt;/em&gt; 
+elements such as &lt;strong&gt; and &lt;em&gt;.&lt;/p&gt;
+				</code>
+			</pre>
+		</section>
+		
+		<section id="colors">
+			<h1>Colors</h1>
+			<div class="color-grid">
+				
+				<div style="background-color: var(--color-background);">--color-background</div>
+				<div style="color: var(--color-foreground);">--color-foreground</div>
+				<div style="color: var(--color-dark)">--color-dark</div>
+				
+				<div style="color: var(--color-light)">--color-light</div>
+				
+				<div style="color: var(--color-md-light)">--color-md-light</div>
+				
+				<div style="color: var(--color-md-dark);">--color-md-dark</div>
+				
+				<div style="color: var(--color-primary);">--color-primary</div>
+				
+				<div style="color: var(--color-info)">--color-info</div>
+				
+				<div style="color: var(--color-success)">--color-success</div>
+				
+				<div style="color: var(--color-danger)">--color-danger</div>
+				
+				<div style="color: var(--color-callout)">--color-callout</div>
+				<div style="color: var(--color-lightest)">--color-lightest</div>
+			</div>
+		</section>
+
+
+	   </div>
+		
+		
+		
+		
 		
 		<section>
 			<h2>Links</h2>
@@ -124,19 +152,19 @@
 			<h2>Forms and controls</h2>
 			<form>
 				<label>
-					<span>Text:</span>
+					<span>Text</span>
 				</label>
 				<input type="text" placeholder="What is your name?">
 				
 
 				<label>
-					<span>Email:</span>
+					<span>Email</span>
 				</label>
 				<input type="email" placeholder="What is your name?">
 				
 
 				<label>
-					<span>Password:</span>
+					<span>Password</span>
 				</label>
 				<input type="password" placeholder="What is your name?">
 				
@@ -148,50 +176,19 @@
 	
                 <input type="submit" value="Submit">
 				<!-- Switch with Click -->
-				<div>
-					<label id="switch-2" class="switch-2">
-						<input type="checkbox">
-						<div>
-							<div></div>
-						</div>
-					</label>
+
+				<label id="switch-2" class="switch-2">
+					<input type="checkbox">
 					<span>Click Switch no JS</span>
-				</div>
-
-				<label class="control-checkbox">One
-					<input type="checkbox" checked="checked">
-					<span></span>
 				</label>
+				
+				
+				<label class="control-checkbox">
+					<input type="checkbox" checked="checked">
+					<span>One</span>
+				</label>
+
 			</form>
-		</section>
-
-
-
-		<section id="colors">
-			<h1>Colors</h1>
-			<div class="color-grid">
-				
-				<div style="background-color: var(--color-background)">--color-background</div>
-				<div style="background-color: var(--color-foreground); color: var(--color-background)">--color-foreground</div>
-				<div style="background-color: var(--color-dark); color: var(--color-background)">--color-dark</div>
-				
-				<div style="background-color: var(--color-light)">--color-light</div>
-				
-				<div style="background-color: var(--color-md-light)">--color-md-light</div>
-				
-				<div style="background-color: var(--color-dark); color: var(--color-background)">--color-md-dark</div>
-				
-				<div style="background-color: var(--color-primary); color: var(--color-background)">--color-primary</div>
-				
-				<div style="background-color: var(--color-info); color: var(--color-background)">--color-info</div>
-				
-				<div style="background-color: var(--color-success); color: var(--color-background)">--color-success</div>
-				
-				<div style="background-color: var(--color-danger); color: var(--color-background)">--color-danger</div>
-				
-				<div style="background-color: var(--color-callout)">--color-callout</div>
-				<div style="background-color: var(--color-lightest)">--color-lightest</div>
-			</div>
 		</section>
 		
 		<section id="navbar">
@@ -226,13 +223,11 @@
 					</code>
 				</pre>
 			</div>
-
-
-
-			
+		
 			<h2>Navbar 2</h2>
 			<p>A navbar with groups of elements on the left and the right.</p>
 			<p>Use two children under <code>div.navbar</code>.</p>
+
 			<div class="navbar">
 				<ul>
 					<li><h1 class="title">TITLE</h1></li>
@@ -265,7 +260,7 @@
 				</pre>
 			</div>
 			
-			<p>here is an alternative with the site title on the left and links on the right.</p>
+			<h2>Navbar 3</h2>
 
 			<div class="navbar">
 				<ul>
@@ -298,11 +293,8 @@
 						</code>
 					</pre>
 				</div>
-				
-
-
-			
-			<h2>Navbar 3</h2>
+						
+			<h2>Navbar 4</h2>
 			<p>With three children the second child will be centered. 
 				This example places the site title in the center.</p>
 			<div class="navbar">
@@ -342,39 +334,19 @@
 						</code>
 					</pre>
 				</div>
-
-
 		</section>
 		
-		
-		
-		<section id="footers">
-			<h2>Page Footer</h2>
-			<div class="page-footer">
-				<ul>
-					<li><h3>Column 1</h3></li>
-					<li><a>Item 1</a></li>
-					<li><a>Item 2</a></li>
-					<li><a>Item 3</a></li>
-				</ul>
-				
-				<ul>
-					<li><h3>Column 2</h3></li>
-					<li><a>Item 1</a></li>
-					<li><a>Item 2</a></li>
-					<li><a>Item 3</a></li>
-				</ul>
-				
-				<ul>
-					<li><h3>Column 3</h3></li>
-					<li><a>Item 1</a></li>
-					<li><a>Item 2</a></li>
-					<li><a>Item 3</a></li>
-				</ul>
-			</div>
-		</section>
+		<h1>Importing JS</h1>
+		<blockquote>
+			<p>
+			  <inthebox-text>“Collect beautiful moments”</inthebox-text>
+			</p>
+			<footer>
+			  <p>― The Internet</p>
+			</footer>
+		  </blockquote>
 
-		<section>
+		<!-- <section>
 			<h3>Components</h3>
 			<p>Frmwrk CSS also includes some slideshow components. To use these include 
 				the JS files at the bottom of the body and use the markup as shown.</p>
@@ -386,36 +358,36 @@
 				<div>
 					<div style="margin:2em">
 						<frmwrk-slides time="5000">
-							<img src="./images/kitten-0.jpeg" width="259" height="194">
-							<img src="./images/kitten-1.jpeg" width="257" height="196">
-							<img src="./images/kitten-2.jpeg" width="259" height="194">
-							<img src="./images/kitten-3.jpeg" width="275" height="183">
-							<img src="./images/kitten-4.jpeg" width="275" height="183">
-							<img src="./images/kitten-5.jpeg" width="275" height="183">
+							<img src="./images/kitten-0.jpg" width="259" height="194">
+							<img src="./images/kitten-1.jpg" width="257" height="196">
+							<img src="./images/kitten-2.jpg" width="259" height="194">
+							<img src="./images/kitten-3.jpg" width="275" height="183">
+							<img src="./images/kitten-4.jpg" width="275" height="183">
+							<img src="./images/kitten-5.jpg" width="275" height="183">
 						</frmwrk-slides>
 					</div>
 					<div style="margin:2em">
 						<frmwrk-slides-2 time="5000" style="width:257px; height:183;">
-							<img src="./images/kitten-0.jpeg" width="259" height="194">
-							<img src="./images/kitten-1.jpeg" width="257" height="196">
-							<img src="./images/kitten-2.jpeg" width="259" height="194">
-							<img src="./images/kitten-3.jpeg" width="275" height="183">
-							<img src="./images/kitten-4.jpeg" width="275" height="183">
-							<img src="./images/kitten-5.jpeg" width="275" height="183">
+							<img src="./images/kitten-0.jpg" width="259" height="194">
+							<img src="./images/kitten-1.jpg" width="257" height="196">
+							<img src="./images/kitten-2.jpg" width="259" height="194">
+							<img src="./images/kitten-3.jpg" width="275" height="183">
+							<img src="./images/kitten-4.jpg" width="275" height="183">
+							<img src="./images/kitten-5.jpg" width="275" height="183">
 						</frmwrk-slides-2>
 					</div>
 					<div style="margin:2em">
 						<frmwrk-slides-2 time="5000" vertical style="width:257px; height:183;">
-							<img src="./images/kitten-0.jpeg" width="259" height="194">
-							<img src="./images/kitten-1.jpeg" width="257" height="196">
-							<img src="./images/kitten-2.jpeg" width="259" height="194">
-							<img src="./images/kitten-3.jpeg" width="275" height="183">
-							<img src="./images/kitten-4.jpeg" width="275" height="183">
-							<img src="./images/kitten-5.jpeg" width="275" height="183">
+							<img src="./images/kitten-0.jpg" width="259" height="194">
+							<img src="./images/kitten-1.jpg" width="257" height="196">
+							<img src="./images/kitten-2.jpg" width="259" height="194">
+							<img src="./images/kitten-3.jpg" width="275" height="183">
+							<img src="./images/kitten-4.jpg" width="275" height="183">
+							<img src="./images/kitten-5.jpg" width="275" height="183">
 						</frmwrk-slides-2>
 					</div>
 				</div>
-		</section>
+		</section> -->
 
 		<section>
 			<h3>Full Color Palette</h3>
@@ -556,7 +528,34 @@
 
 		</section>
   </div>
+
+
+  <section id="footers">
+	<h2>Page Footer</h2>
 	<div class="page-footer">
+		<ul>
+			<li><h3>Column 1</h3></li>
+			<li><a>Item 1</a></li>
+			<li><a>Item 2</a></li>
+			<li><a>Item 3</a></li>
+		</ul>
+		
+		<ul>
+			<li><h3>Column 2</h3></li>
+			<li><a>Item 1</a></li>
+			<li><a>Item 2</a></li>
+			<li><a>Item 3</a></li>
+		</ul>
+		
+		<ul>
+			<li><h3>Column 3</h3></li>
+			<li><a>Item 1</a></li>
+			<li><a>Item 2</a></li>
+			<li><a>Item 3</a></li>
+		</ul>
+	</div>
+	</section>
+	<div class="second-footer" class= "page-footer">
 		<ul>
 			<li><h3>Content</h3></li>
 			<li><a href="#colors">Colors</a></li>
@@ -578,7 +577,7 @@
 		</ul>
 	</div>
 
-	<script src="./js/frmwrk-slides.js"></script>
-	<script src="./js/frmwrk-slides-2.js"></script>
+	
+	<script src='./inthe-box/inthebox-text.js'></script>
 </body>
 </html>
